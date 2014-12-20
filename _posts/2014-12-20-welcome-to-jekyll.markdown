@@ -1,25 +1,32 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2014-12-20 20:23:20
+title:  "Little Guitar Helper v1"
+date:   2014-12-20 00:43:20
 categories: jekyll update
+permalink: /guitar/
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+<!-- Optional theme -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 
-Jekyll also offers powerful support for code snippets:
+<!-- Latest compiled and minified JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+This is a webpage that I built on July to curate the basic tools for guitar practice.
+Both widgets are flash files, probably not supporting mobile devices.
+	
+<!-- Countdown Timer -->
+<div class="col-md-8 col-md-offset-2">
+	<div class="center-block embed-responsive embed-responsive-16by9">
+		<param name="movie" value="http://www.online-stopwatch.com/swf/online-stopwatch.swf" /><param name="quality" value="high" /><param name="menu" value="true" /><embed width="400" height="220" src="http://www.online-stopwatch.com/swf/online-stopwatch.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" class="embed-responsive-item"></embed>
+	</div>
+</div>
 
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll’s dedicated Help repository][jekyll-help].
-
-[jekyll]:      http://jekyllrb.com
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-help]: https://github.com/jekyll/jekyll-help
+<!-- Metronome -->
+<div class="col-md-8 col-md-offset-2">
+	<div class="center-block embed-responsive embed-responsive-16by9">
+		<embed width="340" height="360" src="http://www.metronomeonline.com/swf/metronomePublic.swf" quality="high" allowscriptaccess="always" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="userId=mooo" wmode="transparent" type="application/x-shockwave-flash" class="embed-responsive-item"></embed>
+	</div>
+</div>
