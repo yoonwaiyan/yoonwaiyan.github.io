@@ -26,6 +26,8 @@
 .site-nav {
     float: right;
     line-height: 56px;
+    text-transform: uppercase;
+    font-size: $nav-font-size;
 
     .menu-icon {
         display: none;
@@ -49,6 +51,7 @@
         border: 1px solid $grey-color-light;
         border-radius: 5px;
         text-align: right;
+        font-size: $small-nav-font-size;
 
         .menu-icon {
             display: block;
@@ -121,30 +124,28 @@
 }
 
 .footer-col-1 {
-    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-    width:         calc(35% - (#{$spacing-unit} / 2));
+    width: 35%;
 }
 
 .footer-col-2 {
-    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-    width:         calc(20% - (#{$spacing-unit} / 2));
+    width: 20%;
 }
 
 .footer-col-3 {
-    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-    width:         calc(45% - (#{$spacing-unit} / 2));
+    width: 35%;
 }
 
 @include media-query($on-laptop) {
-    .footer-col-1,
+    .footer-col-1 {
+        width: 35%;
+    }
+
     .footer-col-2 {
-        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-        width:         calc(50% - (#{$spacing-unit} / 2));
+        width: 20%;
     }
 
     .footer-col-3 {
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
+        width: 35%;
     }
 }
 
@@ -198,12 +199,12 @@
 }
 
 .post-title {
-    font-size: 42px;
+    font-size: 36px;
     letter-spacing: -1px;
     line-height: 1;
 
     @include media-query($on-laptop) {
-        font-size: 36px;
+        font-size: 30px;
     }
 }
 

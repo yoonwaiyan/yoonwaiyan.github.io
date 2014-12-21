@@ -14,8 +14,8 @@ permalink: /guitar/
 <!-- Latest compiled and minified JavaScript -->
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
-This is a webpage that I built on July to curate the basic tools for guitar practice.
-Both widgets are flash files, probably not supporting mobile devices.
+<p style="font-size: 16px;">This is a webpage that I built on July to curate the basic tools for guitar practice.
+Both widgets are flash files, probably not supporting mobile devices.</p>
 	
 <!-- Countdown Timer -->
 <div class="col-md-8 col-md-offset-2">
