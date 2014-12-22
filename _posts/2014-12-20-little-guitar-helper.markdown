@@ -3,6 +3,7 @@ layout: post
 title:  "Little Guitar Helper v1"
 date:   2014-12-20 00:43:20
 categories: jekyll update
+excerpt: Curating the basic tools for guitar practice.
 permalink: /guitar/
 ---
 <!-- Latest compiled and minified CSS -->
