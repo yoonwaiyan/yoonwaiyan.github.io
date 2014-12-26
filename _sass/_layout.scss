@@ -24,6 +24,10 @@
     }
 }
 
+.site-description {
+    font-size: 14px;
+}
+
 .site-nav {
     // float: right;
     line-height: 56px;
@@ -99,6 +103,10 @@
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
     text-align: center;
+}
+
+.footer-text {
+    font-size: 14px;
 }
 
 .footer-heading {
