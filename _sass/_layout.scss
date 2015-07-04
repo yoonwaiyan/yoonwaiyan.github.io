@@ -2,11 +2,8 @@
  * Site header
  */
 .site-header {
-    text-align: center;
-    border-top: 5px solid $grey-color-dark;
+    padding: 0 10px;
     border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
-
     // Positioning context for the mobile navigation icon
     position: relative;
 }
@@ -173,6 +170,7 @@
  * Page content
  */
 .page-content {
+    min-height: 700px;
     padding: $spacing-unit 0;
 }
 
@@ -244,5 +242,50 @@
         @include media-query($on-laptop) {
             font-size: 18px;
         }
+    }
+}
+
+.home-content{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 10px;
+
+    p{
+        margin: 15px;
+        font-size: 18px;
+    }
+
+    @media screen and (max-width: $laptop) {
+        width: 70%;
+    }
+
+    @media screen and (max-width: $tablet) {
+        width: 80%;
+    }
+
+    @media screen and (max-width: $mobile) {
+        width: 90%;
+    }
+}
+
+.btn-link{
+    background: #fff none repeat scroll 0 0;
+    border: 0 none;
+    font-size: 16px;
+    height: 40px;
+    line-height: 20px;
+    margin: 15px;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    width: 110px;
+    cursor: pointer;
+
+    &>a{
+        color: #fff;
+    }
+
+    &:hover {
+      background: #CF4647;
     }
 }
