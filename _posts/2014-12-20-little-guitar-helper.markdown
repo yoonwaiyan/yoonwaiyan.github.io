@@ -1,8 +1,8 @@
 ---
-layout: post
+layout: page
 title:  "Little Guitar Helper v1"
 date:   2014-12-20 00:43:20
-categories: jekyll update
+categories: music
 excerpt: Curating the basic tools for guitar practice.
 permalink: /guitar/
 ---
