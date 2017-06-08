@@ -1,19 +1,33 @@
 ---
 layout: no_header
 ---
-<script async src="https://static.medium.com/embed.js"></script><a class="m-profile" data-width="100%" data-collapsed="true" data-border="false" href="https://medium.com/@waiyanyoon">WaiYan Yoon</a>
-<div class="home-content">
+  <div class="intro">
 
-	<p>
-		Currently a web developer at <a href="http://cloudcoder.com.my" target="_blank">Cloud Coder</a> that mainly does back-end programming, dealing with Ruby on Rails for back-end and JavaScript front-end. I love reading and listen to music(Favourite: Indie music, Jazz and Soul) and play guitar.
-	</p>
+    <div class="name">
+      Yoon Wai Yan (waiyan.yoon)
+    </div>
 
-	<ul class="navbar">
-		<li><a href="posts" target="_blank">Posts</a></li>
-		<li><a href="https://github.com/yoonwaiyan" target="_blank">Github</a></li>
-		<li><a href="https://my.linkedin.com/in/yoonwaiyan" target="_blank">LinkedIn</a></li>
-		<li><a href="http://stackoverflow.com/users/2923253" target="_blank">StackOverflow</a></li>
-		<li><a href="https://instagram.com/yyanyoon" target="_blank">Instagram</a></li>
-	</ul>
+    <div class="description">
+      %W(ruby rails javascript books music guitar bass running).map{ |interest| interest.sub(/\S/, &:upcase) }.join(“, ”)
+    </div>
+
+  </div>
+
+  <div style="margin-top: 10px">
+
+    <ul class="post-list">
+      {% for post in site.posts %}
+        <li>
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+          <h2>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h2>
+          <p>{{ post.excerpt }}</p>
+        </li>
+      {% endfor %}
+    </ul>
+
+  </div>
 
 </div>
