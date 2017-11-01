@@ -1,0 +1,33 @@
+---
+layout: no_header
+---
+  <div class="intro">
+
+    <div class="name">
+      Yoon Wai Yan (waiyan.yoon)
+    </div>
+
+    <div class="description">
+      %W(ruby rails javascript books music guitar bass running).map{ |interest| interest.sub(/\S/, &:upcase) }.join(“, ”)
+    </div>
+
+  </div>
+
+  <div style="margin-top: 10px">
+
+    <ul class="post-list">
+      {% for post in site.posts %}
+        <li>
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+          <h2>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h2>
+          <p>{{ post.excerpt }}</p>
+        </li>
+      {% endfor %}
+    </ul>
+
+  </div>
+
+</div>

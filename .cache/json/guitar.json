@@ -1,0 +1,22 @@
+{
+    "data": {
+        "site": {
+            "siteMetadata": {
+                "title": "waiyan.yoon",
+                "author": "Wai-Yan Yoon"
+            }
+        },
+        "markdownRemark": {
+            "id": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/src/pages/2014-12-20-little-guitar-helper/index.md absPath of file >>> MarkdownRemark",
+            "html": "\n\n\n\n\n\n<p style=\"font-size: 16px;\">This is a webpage that I built on July to curate the basic tools for guitar practice.\nBoth widgets are flash files, probably not supporting mobile devices.</p>\n\t\n<!-- Countdown Timer -->\n<div class=\"col-md-6\">\n\t<div class=\"center-block embed-responsive embed-responsive-16by9\">\n\t\t<param name=\"movie\" value=\"http://www.online-stopwatch.com/swf/online-stopwatch.swf\"><param name=\"quality\" value=\"high\"><param name=\"menu\" value=\"true\"><embed width=\"400\" height=\"220\" src=\"http://www.online-stopwatch.com/swf/online-stopwatch.swf\" quality=\"high\" pluginspage=\"http://www.macromedia.com/go/getflashplayer\" type=\"application/x-shockwave-flash\" class=\"embed-responsive-item\">\n\t</div>\n</div>\n\n<div class=\"col-md-6\">\n\t<div class=\"center-block embed-responsive embed-responsive-16by9\">\n\t\t<embed width=\"340\" height=\"360\" src=\"http://www.metronomeonline.com/swf/metronomePublic.swf\" quality=\"high\" allowscriptaccess=\"always\" pluginspage=\"http://www.macromedia.com/go/getflashplayer\" flashvars=\"userId=mooo\" wmode=\"transparent\" type=\"application/x-shockwave-flash\" class=\"embed-responsive-item\">\n\t</div>\n</div>",
+            "frontmatter": {
+                "title": "Little Guitar Helper v1",
+                "date": "December 20, 2014"
+            }
+        }
+    },
+    "pathContext": {
+        "path": "/guitar",
+        "_PARENT": "SOURCE"
+    }
+}

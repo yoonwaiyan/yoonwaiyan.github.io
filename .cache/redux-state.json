@@ -1,0 +1,2019 @@
+{
+  "nodes": {
+    "SitePage /dev-404-page/": {
+      "path": "/dev-404-page/",
+      "id": "SitePage /dev-404-page/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "f91d29e10ba680b413138cf9ed86e655",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin component-page-creator": {
+      "resolve": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/node_modules/gatsby/dist/internal-plugins/component-page-creator",
+      "id": "Plugin component-page-creator",
+      "name": "component-page-creator",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": [],
+        "_PARENT": "SOURCE"
+      },
+      "nodeAPIs": [
+        "createPagesStatefully"
+      ],
+      "pluginFilepath": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/node_modules/gatsby/dist/internal-plugins/component-page-creator",
+      "packageJson": {
+        "name": "component-page-creator",
+        "description": "An internal Gatsby plugin that creates pages from component files in src/pages",
+        "version": "1.0.0",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": [],
+        "_PARENT": "SOURCE"
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "c574c8546e4b8e5e203f3cea77cbfcd4",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin component-layout-creator": {
+      "resolve": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/node_modules/gatsby/dist/internal-plugins/component-layout-creator",
+      "id": "Plugin component-layout-creator",
+      "name": "component-layout-creator",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": [],
+        "_PARENT": "SOURCE"
+      },
+      "nodeAPIs": [
+        "createLayouts"
+      ],
+      "pluginFilepath": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/node_modules/gatsby/dist/internal-plugins/component-layout-creator",
+      "packageJson": {
+        "name": "component-layout-creator",
+        "description": "An internal Gatsby plugin that creates pages from component files in src/layouts",
+        "version": "1.0.0",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": [],
+        "_PARENT": "SOURCE"
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "e971f3da1935c78ebeaf683a5e4850dd",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin internal-data-bridge": {
+      "resolve": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/node_modules/gatsby/dist/internal-plugins/internal-data-bridge",
+      "id": "Plugin internal-data-bridge",
+      "name": "internal-data-bridge",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": [],
+        "_PARENT": "SOURCE"
+      },
+      "nodeAPIs": [
+        "sourceNodes",
+        "onCreatePage"
+      ],
+      "pluginFilepath": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/node_modules/gatsby/dist/internal-plugins/internal-data-bridge",
+      "packageJson": {
+        "name": "internal-data-bridge",
+        "description": "An internal Gatsby plugin which creates data nodes from internal data",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": [],
+        "_PARENT": "SOURCE"
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "052044887564ad530c29f9cc1eaa2c3c",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin dev-404-page": {
+      "resolve": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/node_modules/gatsby/dist/internal-plugins/dev-404-page",
+      "id": "Plugin dev-404-page",
+      "name": "dev-404-page",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": [],
+        "_PARENT": "SOURCE"
+      },
+      "nodeAPIs": [
+        "createPages"
+      ],
+      "pluginFilepath": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/node_modules/gatsby/dist/internal-plugins/dev-404-page",
+      "packageJson": {
+        "name": "dev-404-page",
+        "description": "Internal plugin to add a 404 page in development with helpful information",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": [],
+        "_PARENT": "SOURCE"
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "0411b85d17ce13b878892a7370480b66",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin prod-404": {
+      "resolve": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/node_modules/gatsby/dist/internal-plugins/prod-404",
+      "id": "Plugin prod-404",
+      "name": "prod-404",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": [],
+        "_PARENT": "SOURCE"
+      },
+      "nodeAPIs": [
+        "onCreatePage"
+      ],
+      "pluginFilepath": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/node_modules/gatsby/dist/internal-plugins/prod-404",
+      "packageJson": {
+        "name": "prod-404",
+        "description": "Internal plugin to detect various flavors of 404 pages and ensure there's a 404.html path created as well to ensure compatability with static hosts",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": [],
+        "_PARENT": "SOURCE"
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "af8ca6ad5a5a53c08ad8ae9d09d0ca6f",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin query-runner": {
+      "resolve": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/node_modules/gatsby/dist/internal-plugins/query-runner",
+      "id": "Plugin query-runner",
+      "name": "query-runner",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": [],
+        "_PARENT": "SOURCE"
+      },
+      "nodeAPIs": [
+        "onCreatePage",
+        "onCreateLayout"
+      ],
+      "pluginFilepath": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/node_modules/gatsby/dist/internal-plugins/query-runner",
+      "packageJson": {
+        "name": "query-runner",
+        "description": "Internal plugin for running queries",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": [],
+        "_PARENT": "SOURCE"
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "d3f5f40d4751203cd3272d8e17074754",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-source-filesystem": {
+      "resolve": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/node_modules/gatsby-source-filesystem",
+      "id": "Plugin gatsby-source-filesystem",
+      "name": "gatsby-source-filesystem",
+      "version": "1.5.6",
+      "pluginOptions": {
+        "plugins": [],
+        "path": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/src/pages",
+        "name": "pages",
+        "_PARENT": "SOURCE"
+      },
+      "nodeAPIs": [
+        "sourceNodes"
+      ],
+      "pluginFilepath": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/node_modules/gatsby-source-filesystem",
+      "packageJson": {
+        "name": "gatsby-source-filesystem",
+        "description": "Gatsby plugin which parses files within a directory for further parsing by other plugins",
+        "version": "1.5.6",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "chokidar",
+            "version": "^1.7.0",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "fs-extra",
+            "version": "^4.0.1",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "got",
+            "version": "^7.1.0",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "md5-file",
+            "version": "^3.1.1",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "mime",
+            "version": "^1.3.6",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "pretty-bytes",
+            "version": "^4.0.2",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "slash",
+            "version": "^1.0.0",
+            "_PARENT": "SOURCE"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "cross-env",
+            "version": "^5.0.5",
+            "_PARENT": "SOURCE"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": [],
+        "_PARENT": "SOURCE"
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "9dc4ef2ec9019d6bbdc288e5afbd0d68",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-transformer-remark": {
+      "resolve": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/node_modules/gatsby-transformer-remark",
+      "id": "Plugin gatsby-transformer-remark",
+      "name": "gatsby-transformer-remark",
+      "version": "1.7.19",
+      "pluginOptions": {
+        "plugins": [
+          {
+            "resolve": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/node_modules/gatsby-remark-images",
+            "id": "Plugin gatsby-remark-images",
+            "name": "gatsby-remark-images",
+            "version": "1.5.24",
+            "pluginOptions": {
+              "plugins": [],
+              "maxWidth": 590,
+              "_PARENT": "SOURCE",
+              "wrapperStyle": "",
+              "backgroundColor": "white",
+              "linkImagesToOriginal": true,
+              "pathPrefix": "/yoonwaiyan.github.io"
+            },
+            "nodeAPIs": [],
+            "_PARENT": "SOURCE",
+            "pluginFilepath": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/node_modules/gatsby-remark-images"
+          },
+          {
+            "resolve": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/node_modules/gatsby-remark-responsive-iframe",
+            "id": "Plugin gatsby-remark-responsive-iframe",
+            "name": "gatsby-remark-responsive-iframe",
+            "version": "1.4.13",
+            "pluginOptions": {
+              "plugins": [],
+              "wrapperStyle": "margin-bottom: 1.0725rem",
+              "_PARENT": "SOURCE"
+            },
+            "nodeAPIs": [],
+            "_PARENT": "SOURCE",
+            "pluginFilepath": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/node_modules/gatsby-remark-responsive-iframe"
+          },
+          {
+            "resolve": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/node_modules/gatsby-remark-prismjs",
+            "id": "Plugin gatsby-remark-prismjs",
+            "name": "gatsby-remark-prismjs",
+            "version": "1.2.9",
+            "pluginOptions": {
+              "plugins": [],
+              "_PARENT": "SOURCE"
+            },
+            "nodeAPIs": [],
+            "_PARENT": "SOURCE",
+            "pluginFilepath": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/node_modules/gatsby-remark-prismjs"
+          },
+          {
+            "resolve": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/node_modules/gatsby-remark-copy-linked-files",
+            "id": "Plugin gatsby-remark-copy-linked-files",
+            "name": "gatsby-remark-copy-linked-files",
+            "version": "1.5.15",
+            "pluginOptions": {
+              "plugins": [],
+              "_PARENT": "SOURCE",
+              "ignoreFileExtensions": [
+                "png",
+                "jpg",
+                "jpeg",
+                "bmp",
+                "tiff"
+              ]
+            },
+            "nodeAPIs": [],
+            "_PARENT": "SOURCE",
+            "pluginFilepath": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/node_modules/gatsby-remark-copy-linked-files"
+          },
+          {
+            "resolve": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/node_modules/gatsby-remark-smartypants",
+            "id": "Plugin gatsby-remark-smartypants",
+            "name": "gatsby-remark-smartypants",
+            "version": "1.4.8",
+            "pluginOptions": {
+              "plugins": [],
+              "_PARENT": "SOURCE"
+            },
+            "nodeAPIs": [],
+            "_PARENT": "SOURCE",
+            "pluginFilepath": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/node_modules/gatsby-remark-smartypants"
+          }
+        ],
+        "_PARENT": "SOURCE"
+      },
+      "nodeAPIs": [
+        "onCreateNode",
+        "setFieldsOnGraphQLNodeType"
+      ],
+      "pluginFilepath": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/node_modules/gatsby-transformer-remark",
+      "packageJson": {
+        "name": "gatsby-transformer-remark",
+        "description": "Gatsby transformer plugin for Markdown using the Remark library and ecosystem",
+        "version": "1.7.19",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "markdown",
+          "remark"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "gray-matter",
+            "version": "^2.1.0",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "hast-util-to-html",
+            "version": "^3.0.0",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.4",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "mdast-util-to-hast",
+            "version": "^2.4.0",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "mdast-util-toc",
+            "version": "^2.0.1",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "remark",
+            "version": "^7.0.1",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "remark-parse",
+            "version": "^4.0.0",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "remark-retext",
+            "version": "^3.1.0",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "remark-stringify",
+            "version": "^4.0.0",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "retext-english",
+            "version": "^3.0.0",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "sanitize-html",
+            "version": "^1.14.1",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "underscore.string",
+            "version": "^3.3.4",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "unified",
+            "version": "^6.1.5",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "unist-util-select",
+            "version": "^1.5.0",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "unist-util-visit",
+            "version": "^1.1.1",
+            "_PARENT": "SOURCE"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "babel-plugin-transform-object-rest-spread",
+            "version": "^6.20.2",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.0.5",
+            "_PARENT": "SOURCE"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": [],
+        "_PARENT": "SOURCE"
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "7fde3c8773ee8d6a952c0ff6c27c7bb3",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-remark-images": {
+      "resolve": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/node_modules/gatsby-remark-images",
+      "id": "Plugin gatsby-remark-images",
+      "name": "gatsby-remark-images",
+      "version": "1.5.24",
+      "pluginOptions": {
+        "plugins": [],
+        "maxWidth": 590,
+        "_PARENT": "SOURCE",
+        "wrapperStyle": "",
+        "backgroundColor": "white",
+        "linkImagesToOriginal": true,
+        "pathPrefix": "/yoonwaiyan.github.io"
+      },
+      "nodeAPIs": [],
+      "_PARENT": "SOURCE",
+      "pluginFilepath": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/node_modules/gatsby-remark-images",
+      "packageJson": {
+        "name": "gatsby-remark-images",
+        "description": "Processes images in markdown so they can be used in the production build.",
+        "version": "1.5.24",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "markdown",
+          "remark",
+          "image",
+          "responsive images"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "cheerio",
+            "version": "^1.0.0-rc.2",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "gatsby-plugin-sharp",
+            "version": "^1.6.13",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "is-relative-url",
+            "version": "^2.0.0",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.4",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "slash",
+            "version": "^1.0.0",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "unist-util-select",
+            "version": "^1.5.0",
+            "_PARENT": "SOURCE"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.0.5",
+            "_PARENT": "SOURCE"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": [],
+        "_PARENT": "SOURCE"
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "f4cbaef7e013b2bf3eb0a55716c2a0c2",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-remark-responsive-iframe": {
+      "resolve": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/node_modules/gatsby-remark-responsive-iframe",
+      "id": "Plugin gatsby-remark-responsive-iframe",
+      "name": "gatsby-remark-responsive-iframe",
+      "version": "1.4.13",
+      "pluginOptions": {
+        "plugins": [],
+        "wrapperStyle": "margin-bottom: 1.0725rem",
+        "_PARENT": "SOURCE"
+      },
+      "nodeAPIs": [],
+      "_PARENT": "SOURCE",
+      "pluginFilepath": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/node_modules/gatsby-remark-responsive-iframe",
+      "packageJson": {
+        "name": "gatsby-remark-responsive-iframe",
+        "description": "Make iframes in Markdown processed by Remark responsive",
+        "version": "1.4.13",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "remark"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "cheerio",
+            "version": "^1.0.0-rc.2",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.4",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "unist-util-visit",
+            "version": "^1.1.1",
+            "_PARENT": "SOURCE"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.0.5",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "remark",
+            "version": "^7.0.0",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "unist-util-find",
+            "version": "^1.0.1",
+            "_PARENT": "SOURCE"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": [],
+        "_PARENT": "SOURCE"
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "dbbbe8066f04b792bc5f25f79460b27e",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-remark-prismjs": {
+      "resolve": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/node_modules/gatsby-remark-prismjs",
+      "id": "Plugin gatsby-remark-prismjs",
+      "name": "gatsby-remark-prismjs",
+      "version": "1.2.9",
+      "pluginOptions": {
+        "plugins": [],
+        "_PARENT": "SOURCE"
+      },
+      "nodeAPIs": [],
+      "_PARENT": "SOURCE",
+      "pluginFilepath": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/node_modules/gatsby-remark-prismjs",
+      "packageJson": {
+        "name": "gatsby-remark-prismjs",
+        "description": "Adds syntax highlighting to code blocks at build time using PrismJS",
+        "version": "1.2.9",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "prismjs",
+          "remark"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "parse-numeric-range",
+            "version": "^0.0.2",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "prismjs",
+            "version": "^1.7.0",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "unist-util-visit",
+            "version": "^1.1.1",
+            "_PARENT": "SOURCE"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.0.5",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "remark",
+            "version": "^7.0.1",
+            "_PARENT": "SOURCE"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": [],
+        "_PARENT": "SOURCE"
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "97d7cfac7e0bcf703878cd2b2055d7b0",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-remark-copy-linked-files": {
+      "resolve": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/node_modules/gatsby-remark-copy-linked-files",
+      "id": "Plugin gatsby-remark-copy-linked-files",
+      "name": "gatsby-remark-copy-linked-files",
+      "version": "1.5.15",
+      "pluginOptions": {
+        "plugins": [],
+        "_PARENT": "SOURCE",
+        "ignoreFileExtensions": [
+          "png",
+          "jpg",
+          "jpeg",
+          "bmp",
+          "tiff"
+        ]
+      },
+      "nodeAPIs": [],
+      "_PARENT": "SOURCE",
+      "pluginFilepath": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/node_modules/gatsby-remark-copy-linked-files",
+      "packageJson": {
+        "name": "gatsby-remark-copy-linked-files",
+        "description": "Find files which are linked to from markdown and copy them to the public directory",
+        "version": "1.5.15",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "prismjs",
+          "remark"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "cheerio",
+            "version": "^1.0.0-rc.2",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "fs-extra",
+            "version": "^4.0.1",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "image-size",
+            "version": "^0.6.1",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "is-relative-url",
+            "version": "^2.0.0",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.4",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "unist-util-visit",
+            "version": "^1.1.1",
+            "_PARENT": "SOURCE"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.0.5",
+            "_PARENT": "SOURCE"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": [],
+        "_PARENT": "SOURCE"
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "fce273dd017fe1b4392e1a1b2cb17c9e",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-remark-smartypants": {
+      "resolve": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/node_modules/gatsby-remark-smartypants",
+      "id": "Plugin gatsby-remark-smartypants",
+      "name": "gatsby-remark-smartypants",
+      "version": "1.4.8",
+      "pluginOptions": {
+        "plugins": [],
+        "_PARENT": "SOURCE"
+      },
+      "nodeAPIs": [],
+      "_PARENT": "SOURCE",
+      "pluginFilepath": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/node_modules/gatsby-remark-smartypants",
+      "packageJson": {
+        "name": "gatsby-remark-smartypants",
+        "description": "Use retext-smartypants to auto-enhance typography of markdown",
+        "version": "1.4.8",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "smartypants"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "retext",
+            "version": "^4.0.0",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "retext-smartypants",
+            "version": "^2.0.0",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "unist-util-visit",
+            "version": "^1.1.1",
+            "_PARENT": "SOURCE"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.0.5",
+            "_PARENT": "SOURCE"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": [],
+        "_PARENT": "SOURCE"
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "aaa0a9adec95e7ac0cc41e8230254631",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-transformer-sharp": {
+      "resolve": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/node_modules/gatsby-transformer-sharp",
+      "id": "Plugin gatsby-transformer-sharp",
+      "name": "gatsby-transformer-sharp",
+      "version": "1.6.13",
+      "pluginOptions": {
+        "plugins": [],
+        "_PARENT": "SOURCE"
+      },
+      "nodeAPIs": [
+        "onCreateNode",
+        "setFieldsOnGraphQLNodeType",
+        "onPreExtractQueries"
+      ],
+      "pluginFilepath": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/node_modules/gatsby-transformer-sharp",
+      "packageJson": {
+        "name": "gatsby-transformer-sharp",
+        "description": "Gatsby transformer plugin for images using Sharp",
+        "version": "1.6.13",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "sharp",
+          "image"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "fs-extra",
+            "version": "^4.0.2",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "image-size",
+            "version": "^0.6.0",
+            "_PARENT": "SOURCE"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.0.5",
+            "_PARENT": "SOURCE"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": [],
+        "_PARENT": "SOURCE"
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "d530bf6b31391329e8d227fe97c28eae",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-sharp": {
+      "resolve": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/node_modules/gatsby-plugin-sharp",
+      "id": "Plugin gatsby-plugin-sharp",
+      "name": "gatsby-plugin-sharp",
+      "version": "1.6.13",
+      "pluginOptions": {
+        "plugins": [],
+        "_PARENT": "SOURCE"
+      },
+      "nodeAPIs": [],
+      "pluginFilepath": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/node_modules/gatsby-plugin-sharp",
+      "packageJson": {
+        "name": "gatsby-plugin-sharp",
+        "description": "Wrapper of the Sharp image manipulation library for Gatsby plugins",
+        "version": "1.6.13",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "image",
+          "sharp"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "async",
+            "version": "^2.1.2",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "image-size",
+            "version": "^0.5.1",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "imagemin",
+            "version": "^5.2.2",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "imagemin-pngquant",
+            "version": "^5.0.0",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "imagemin-webp",
+            "version": "^4.0.0",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.4",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "potrace",
+            "version": "^2.1.1",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "progress",
+            "version": "^1.1.8",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "sharp",
+            "version": "^0.17.3",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "svgo",
+            "version": "^0.7.2",
+            "_PARENT": "SOURCE"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.0.5",
+            "_PARENT": "SOURCE"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": [],
+        "_PARENT": "SOURCE"
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "75540942d99bebbd7fbe5db174f20234",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-google-analytics": {
+      "resolve": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/node_modules/gatsby-plugin-google-analytics",
+      "id": "Plugin gatsby-plugin-google-analytics",
+      "name": "gatsby-plugin-google-analytics",
+      "version": "1.0.11",
+      "pluginOptions": {
+        "plugins": [],
+        "_PARENT": "SOURCE"
+      },
+      "nodeAPIs": [],
+      "pluginFilepath": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/node_modules/gatsby-plugin-google-analytics",
+      "packageJson": {
+        "name": "gatsby-plugin-google-analytics",
+        "description": "Gatsby plugin to add google analytics onto a site",
+        "version": "1.0.11",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "google analytics"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0",
+            "_PARENT": "SOURCE"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.0.5",
+            "_PARENT": "SOURCE"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": [],
+        "_PARENT": "SOURCE"
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "dcde20f3487fd0619b5308b2ad0a7f85",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-offline": {
+      "resolve": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/node_modules/gatsby-plugin-offline",
+      "id": "Plugin gatsby-plugin-offline",
+      "name": "gatsby-plugin-offline",
+      "version": "1.0.10",
+      "pluginOptions": {
+        "plugins": [],
+        "_PARENT": "SOURCE"
+      },
+      "nodeAPIs": [
+        "createPages",
+        "onPostBuild"
+      ],
+      "pluginFilepath": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/node_modules/gatsby-plugin-offline",
+      "packageJson": {
+        "name": "gatsby-plugin-offline",
+        "description": "Gatsby plugin which sets up a site to be able to run offline",
+        "version": "1.0.10",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "offline",
+          "precache",
+          "service-worker"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "sw-precache",
+            "version": "^5.0.0",
+            "_PARENT": "SOURCE"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.0.5",
+            "_PARENT": "SOURCE"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": [],
+        "_PARENT": "SOURCE"
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "3809a90c2b46b4f752f965d8e2e26784",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-react-helmet": {
+      "resolve": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/node_modules/gatsby-plugin-react-helmet",
+      "id": "Plugin gatsby-plugin-react-helmet",
+      "name": "gatsby-plugin-react-helmet",
+      "version": "1.0.8",
+      "pluginOptions": {
+        "plugins": [],
+        "_PARENT": "SOURCE"
+      },
+      "nodeAPIs": [],
+      "pluginFilepath": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/node_modules/gatsby-plugin-react-helmet",
+      "packageJson": {
+        "name": "gatsby-plugin-react-helmet",
+        "description": "Stub description for gatsby-plugin-react-helmet",
+        "version": "1.0.8",
+        "main": "index.js",
+        "keywords": [
+          "gatsby"
+        ],
+        "author": "Kyle Mathews &lt;mathews.kyle@gmail.com&gt;",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "react-helmet",
+            "version": "^5.1.3",
+            "_PARENT": "SOURCE"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.0.5",
+            "_PARENT": "SOURCE"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": [],
+        "_PARENT": "SOURCE"
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "193f8c9fd88b95ad12e30ec5d45230b7",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-typography": {
+      "resolve": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/node_modules/gatsby-plugin-typography",
+      "id": "Plugin gatsby-plugin-typography",
+      "name": "gatsby-plugin-typography",
+      "version": "1.7.10",
+      "pluginOptions": {
+        "plugins": [],
+        "pathToConfigModule": "src/utils/typography",
+        "_PARENT": "SOURCE"
+      },
+      "nodeAPIs": [
+        "onPreBootstrap"
+      ],
+      "pluginFilepath": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/node_modules/gatsby-plugin-typography",
+      "packageJson": {
+        "name": "gatsby-plugin-typography",
+        "description": "Gatsby plugin to setup server rendering of Typography.js' CSS",
+        "version": "1.7.10",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "typography",
+          "typography.js"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "react-typography",
+            "version": "^0.16.1",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "typography",
+            "version": "^0.16.0",
+            "_PARENT": "SOURCE"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "cross-env",
+            "version": "^5.0.5",
+            "_PARENT": "SOURCE"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": [],
+        "_PARENT": "SOURCE"
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "f4c7c088f884b0e376166890b5d7a05d",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin default-site-plugin": {
+      "resolve": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io",
+      "id": "Plugin default-site-plugin",
+      "name": "default-site-plugin",
+      "version": "fbfd34cc94d514efd830f54c969c92ee",
+      "pluginOptions": {
+        "plugins": [],
+        "_PARENT": "SOURCE"
+      },
+      "nodeAPIs": [
+        "createPages"
+      ],
+      "pluginFilepath": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io",
+      "packageJson": {
+        "name": "gatsby-starter-blog",
+        "description": "Starter Gatsby Blog",
+        "version": "1.0.0",
+        "main": "n/a",
+        "keywords": [
+          "gatsby"
+        ],
+        "author": "Yoon Wai Yan",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "gatsby",
+            "version": "^1.9.73",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "gatsby-link",
+            "version": "^1.6.22",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "gatsby-plugin-google-analytics",
+            "version": "^1.0.10",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "gatsby-plugin-manifest",
+            "version": "^1.0.8",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "gatsby-plugin-offline",
+            "version": "^1.0.10",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "gatsby-plugin-preact",
+            "version": "^1.0.12",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "gatsby-plugin-react-helmet",
+            "version": "^1.0.8",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "gatsby-plugin-sharp",
+            "version": "^1.6.9",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "gatsby-plugin-typography",
+            "version": "^1.7.10",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "gatsby-remark-copy-linked-files",
+            "version": "^1.5.9",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "gatsby-remark-images",
+            "version": "^1.5.18",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "gatsby-remark-prismjs",
+            "version": "^1.2.1",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "gatsby-remark-responsive-iframe",
+            "version": "^1.4.8",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "gatsby-remark-smartypants",
+            "version": "^1.4.8",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "gatsby-source-filesystem",
+            "version": "^1.5.5",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "gatsby-transformer-remark",
+            "version": "^1.7.17",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "gatsby-transformer-sharp",
+            "version": "^1.6.10",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.15.0",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "react-responsive-grid",
+            "version": "^0.3.3",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "typeface-merriweather",
+            "version": "^0.0.35",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "typeface-montserrat",
+            "version": "^0.0.37",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "typography-theme-wordpress-2016",
+            "version": "^0.15.1",
+            "_PARENT": "SOURCE"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "gh-pages",
+            "version": "^0.12.0",
+            "_PARENT": "SOURCE"
+          },
+          {
+            "name": "prettier",
+            "version": "^1.7.4",
+            "_PARENT": "SOURCE"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": [],
+        "_PARENT": "SOURCE"
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "4cbcaf3340855b3535cf758100eeb147",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Site": {
+      "siteMetadata": {
+        "title": "waiyan.yoon",
+        "author": "Wai-Yan Yoon",
+        "_PARENT": "SOURCE"
+      },
+      "pathPrefix": "/yoonwaiyan.github.io",
+      "polyfill": true,
+      "buildTime": "2017-11-01T14:09:27.260Z",
+      "id": "Site",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "afa5f1ed2f6e7c8748aea73ac95cfc0b",
+        "type": "Site",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/src/pages absPath of file": {
+      "id": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/src/pages absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "96cb6eebf762db3aae30601fffc5d537",
+        "type": "Directory",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/src/pages",
+      "relativePath": "",
+      "extension": "",
+      "size": 204,
+      "prettySize": "204 B",
+      "modifiedTime": "2017-11-01T13:39:50.000Z",
+      "accessTime": "2017-11-01T14:09:30.000Z",
+      "changeTime": "2017-11-01T13:56:44.000Z",
+      "birthTime": "2017-11-01T13:08:52.000Z",
+      "root": "/",
+      "dir": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/src",
+      "base": "pages",
+      "ext": "",
+      "name": "pages",
+      "relativeDirectory": "..",
+      "dev": 16777220,
+      "mode": 16877,
+      "nlink": 6,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 99568569,
+      "blocks": 0,
+      "atime": "2017-11-01T14:09:30.000Z",
+      "mtime": "2017-11-01T13:39:50.000Z",
+      "ctime": "2017-11-01T13:56:44.000Z",
+      "birthtime": "2017-11-01T13:08:52.000Z"
+    },
+    "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/src/pages/2014-12-20-little-guitar-helper absPath of file": {
+      "id": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/src/pages/2014-12-20-little-guitar-helper absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "bf3bbae3a398df41f243506eeda2f813",
+        "type": "Directory",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/src/pages/2014-12-20-little-guitar-helper",
+      "relativePath": "2014-12-20-little-guitar-helper",
+      "extension": "",
+      "size": 102,
+      "prettySize": "102 B",
+      "modifiedTime": "2017-11-01T13:39:06.000Z",
+      "accessTime": "2017-11-01T14:09:30.000Z",
+      "changeTime": "2017-11-01T13:56:44.000Z",
+      "birthTime": "2017-11-01T13:38:51.000Z",
+      "root": "/",
+      "dir": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/src/pages",
+      "base": "2014-12-20-little-guitar-helper",
+      "ext": "",
+      "name": "2014-12-20-little-guitar-helper",
+      "relativeDirectory": "",
+      "dev": 16777220,
+      "mode": 16877,
+      "nlink": 3,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 99568571,
+      "blocks": 0,
+      "atime": "2017-11-01T14:09:30.000Z",
+      "mtime": "2017-11-01T13:39:06.000Z",
+      "ctime": "2017-11-01T13:56:44.000Z",
+      "birthtime": "2017-11-01T13:38:51.000Z"
+    },
+    "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/src/pages/2015-07-31-active-admin-replace-content-in-blank-slate absPath of file": {
+      "id": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/src/pages/2015-07-31-active-admin-replace-content-in-blank-slate absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "0f9d150ddb53dc1da5bc7852fc734199",
+        "type": "Directory",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/src/pages/2015-07-31-active-admin-replace-content-in-blank-slate",
+      "relativePath": "2015-07-31-active-admin-replace-content-in-blank-slate",
+      "extension": "",
+      "size": 102,
+      "prettySize": "102 B",
+      "modifiedTime": "2017-11-01T13:39:41.000Z",
+      "accessTime": "2017-11-01T14:09:30.000Z",
+      "changeTime": "2017-11-01T13:56:44.000Z",
+      "birthTime": "2017-11-01T13:39:16.000Z",
+      "root": "/",
+      "dir": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/src/pages",
+      "base": "2015-07-31-active-admin-replace-content-in-blank-slate",
+      "ext": "",
+      "name": "2015-07-31-active-admin-replace-content-in-blank-slate",
+      "relativeDirectory": "",
+      "dev": 16777220,
+      "mode": 16877,
+      "nlink": 3,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 99568573,
+      "blocks": 0,
+      "atime": "2017-11-01T14:09:30.000Z",
+      "mtime": "2017-11-01T13:39:41.000Z",
+      "ctime": "2017-11-01T13:56:44.000Z",
+      "birthtime": "2017-11-01T13:39:16.000Z"
+    },
+    "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/src/pages/.DS_Store absPath of file": {
+      "id": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/src/pages/.DS_Store absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "194577a7e20bdcc7afbb718f502c134c",
+        "mediaType": "application/octet-stream",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/src/pages/.DS_Store",
+      "relativePath": ".DS_Store",
+      "extension": "",
+      "size": 6148,
+      "prettySize": "6.15 kB",
+      "modifiedTime": "2017-11-01T13:55:51.000Z",
+      "accessTime": "2017-11-01T14:05:04.000Z",
+      "changeTime": "2017-11-01T13:56:44.000Z",
+      "birthTime": "2017-11-01T13:39:16.000Z",
+      "root": "/",
+      "dir": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/src/pages",
+      "base": ".DS_Store",
+      "ext": "",
+      "name": ".DS_Store",
+      "relativeDirectory": "",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 99568570,
+      "blocks": 16,
+      "atime": "2017-11-01T14:05:04.000Z",
+      "mtime": "2017-11-01T13:55:51.000Z",
+      "ctime": "2017-11-01T13:56:44.000Z",
+      "birthtime": "2017-11-01T13:39:16.000Z"
+    },
+    "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/src/pages/index.js absPath of file": {
+      "id": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/src/pages/index.js absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "fe49931ab47c2adc4c738a0ff4d3a90e",
+        "mediaType": "application/javascript",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/src/pages/index.js",
+      "relativePath": "index.js",
+      "extension": "js",
+      "size": 1850,
+      "prettySize": "1.85 kB",
+      "modifiedTime": "2017-11-01T13:08:52.000Z",
+      "accessTime": "2017-11-01T14:05:26.000Z",
+      "changeTime": "2017-11-01T13:56:44.000Z",
+      "birthTime": "2017-11-01T13:08:52.000Z",
+      "root": "/",
+      "dir": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/src/pages",
+      "base": "index.js",
+      "ext": ".js",
+      "name": "index",
+      "relativeDirectory": "",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 99568575,
+      "blocks": 8,
+      "atime": "2017-11-01T14:05:26.000Z",
+      "mtime": "2017-11-01T13:08:52.000Z",
+      "ctime": "2017-11-01T13:56:44.000Z",
+      "birthtime": "2017-11-01T13:08:52.000Z"
+    },
+    "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/src/pages/2014-12-20-little-guitar-helper/index.md absPath of file": {
+      "id": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/src/pages/2014-12-20-little-guitar-helper/index.md absPath of file",
+      "children": [
+        "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/src/pages/2014-12-20-little-guitar-helper/index.md absPath of file >>> MarkdownRemark"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "32938cd1a62e4013f56642f158ac4d2c",
+        "mediaType": "text/markdown",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/src/pages/2014-12-20-little-guitar-helper/index.md",
+      "relativePath": "2014-12-20-little-guitar-helper/index.md",
+      "extension": "md",
+      "size": 1667,
+      "prettySize": "1.67 kB",
+      "modifiedTime": "2017-11-01T13:52:31.000Z",
+      "accessTime": "2017-11-01T14:05:04.000Z",
+      "changeTime": "2017-11-01T13:56:44.000Z",
+      "birthTime": "2017-06-08T13:22:38.000Z",
+      "root": "/",
+      "dir": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/src/pages/2014-12-20-little-guitar-helper",
+      "base": "index.md",
+      "ext": ".md",
+      "name": "index",
+      "relativeDirectory": "2014-12-20-little-guitar-helper",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 99568572,
+      "blocks": 8,
+      "atime": "2017-11-01T14:05:04.000Z",
+      "mtime": "2017-11-01T13:52:31.000Z",
+      "ctime": "2017-11-01T13:56:44.000Z",
+      "birthtime": "2017-06-08T13:22:38.000Z"
+    },
+    "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/src/pages/2015-07-31-active-admin-replace-content-in-blank-slate/index.md absPath of file": {
+      "id": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/src/pages/2015-07-31-active-admin-replace-content-in-blank-slate/index.md absPath of file",
+      "children": [
+        "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/src/pages/2015-07-31-active-admin-replace-content-in-blank-slate/index.md absPath of file >>> MarkdownRemark"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "0bf58c0edcba414e49be4a2b78893765",
+        "mediaType": "text/markdown",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/src/pages/2015-07-31-active-admin-replace-content-in-blank-slate/index.md",
+      "relativePath": "2015-07-31-active-admin-replace-content-in-blank-slate/index.md",
+      "extension": "md",
+      "size": 1419,
+      "prettySize": "1.42 kB",
+      "modifiedTime": "2017-11-01T13:43:34.000Z",
+      "accessTime": "2017-11-01T14:05:04.000Z",
+      "changeTime": "2017-11-01T13:56:44.000Z",
+      "birthTime": "2017-06-08T13:22:38.000Z",
+      "root": "/",
+      "dir": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/src/pages/2015-07-31-active-admin-replace-content-in-blank-slate",
+      "base": "index.md",
+      "ext": ".md",
+      "name": "index",
+      "relativeDirectory": "2015-07-31-active-admin-replace-content-in-blank-slate",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 99568574,
+      "blocks": 8,
+      "atime": "2017-11-01T14:05:04.000Z",
+      "mtime": "2017-11-01T13:43:34.000Z",
+      "ctime": "2017-11-01T13:56:44.000Z",
+      "birthtime": "2017-06-08T13:22:38.000Z"
+    },
+    "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/src/pages/2014-12-20-little-guitar-helper/index.md absPath of file >>> MarkdownRemark": {
+      "id": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/src/pages/2014-12-20-little-guitar-helper/index.md absPath of file >>> MarkdownRemark",
+      "children": [],
+      "parent": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/src/pages/2014-12-20-little-guitar-helper/index.md absPath of file",
+      "internal": {
+        "content": "---\ntitle:  \"Little Guitar Helper v1\"\ndate:   2014-12-20T00:43:20Z\npath: \"/guitar\"\n---\n<!-- Latest compiled and minified CSS -->\n<link rel=\"stylesheet\" href=\"http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css\">\n\n<!-- Optional theme -->\n<link rel=\"stylesheet\" href=\"http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css\">\n\n<!-- Latest compiled and minified JavaScript -->\n<script src=\"http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js\"></script>\n\n<p style=\"font-size: 16px;\">This is a webpage that I built on July to curate the basic tools for guitar practice.\nBoth widgets are flash files, probably not supporting mobile devices.</p>\n\t\n<!-- Countdown Timer -->\n<div class=\"col-md-6\">\n\t<div class=\"center-block embed-responsive embed-responsive-16by9\">\n\t\t<param name=\"movie\" value=\"http://www.online-stopwatch.com/swf/online-stopwatch.swf\" /><param name=\"quality\" value=\"high\" /><param name=\"menu\" value=\"true\" /><embed width=\"400\" height=\"220\" src=\"http://www.online-stopwatch.com/swf/online-stopwatch.swf\" quality=\"high\" pluginspage=\"http://www.macromedia.com/go/getflashplayer\" type=\"application/x-shockwave-flash\" class=\"embed-responsive-item\"></embed>\n\t</div>\n</div>\n\n<!-- Metronome -->\n<div class=\"col-md-6\">\n\t<div class=\"center-block embed-responsive embed-responsive-16by9\">\n\t\t<embed width=\"340\" height=\"360\" src=\"http://www.metronomeonline.com/swf/metronomePublic.swf\" quality=\"high\" allowscriptaccess=\"always\" pluginspage=\"http://www.macromedia.com/go/getflashplayer\" flashvars=\"userId=mooo\" wmode=\"transparent\" type=\"application/x-shockwave-flash\" class=\"embed-responsive-item\"></embed>\n\t</div>\n</div>",
+        "contentDigest": "13bab13a314799505dcf426ef2f31ced",
+        "type": "MarkdownRemark",
+        "owner": "gatsby-transformer-remark"
+      },
+      "frontmatter": {
+        "title": "Little Guitar Helper v1",
+        "date": "2014-12-20T00:43:20.000Z",
+        "path": "/guitar",
+        "_PARENT": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/src/pages/2014-12-20-little-guitar-helper/index.md absPath of file",
+        "parent": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/src/pages/2014-12-20-little-guitar-helper/index.md absPath of file"
+      },
+      "fileAbsolutePath": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/src/pages/2014-12-20-little-guitar-helper/index.md"
+    },
+    "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/src/pages/2015-07-31-active-admin-replace-content-in-blank-slate/index.md absPath of file >>> MarkdownRemark": {
+      "id": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/src/pages/2015-07-31-active-admin-replace-content-in-blank-slate/index.md absPath of file >>> MarkdownRemark",
+      "children": [],
+      "parent": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/src/pages/2015-07-31-active-admin-replace-content-in-blank-slate/index.md absPath of file",
+      "internal": {
+        "content": "---\npath: \"/active-admin-blank-slate\"\ndate: \"2015-07-31T14:17:23Z\"\ntitle: \"Replacing Content Displayed in Active Admin Blank Slate\"\nexcerpt: A small tip on rendering blank slate in Active Admin pages.\n---\n\nThere are tons of Active Admin workarounds available in the net but there are very limited resource on manipulating the content to be displayed in the blank slate. One of it is the StackOverflow question which is not what I want. All I want is to replace/manipulate the content as displayed inside the blank slate instead of customizing it in per-page basis: Remove the \"Create new\" link.\n<img src=\"https://s3.amazonaws.com/waiyanyoon.com/blank_slate_before.png\" alt=\"Before monkey patching\">\n\nThere's a question that was asked in Google Groups but it's been few years but yet received any response, so I decided to create a monkey patch by overriding Active Admin source code. The code is placed in the /config/initializer folder of my Rails project as `blank_slate.rb` so that the project loads up the patch file without any configuration to load up a lib folder.\n\n<script src=\"https://gist.github.com/yoonwaiyan/75caf90aa5c355eb3484.js\"></script>\n\nBy patching the `render_blank_slate` function and removing the join between the blank slate message and the \"Create One\" link as returned in `blank_slate_link`.\n<img src=\"https://s3.amazonaws.com/waiyanyoon.com/blank_slate_after.png\" alt=\"After monkey patching\">",
+        "contentDigest": "7a4af4b4fd4a0eee78d47ba00b6a941c",
+        "type": "MarkdownRemark",
+        "owner": "gatsby-transformer-remark"
+      },
+      "frontmatter": {
+        "title": "Replacing Content Displayed in Active Admin Blank Slate",
+        "path": "/active-admin-blank-slate",
+        "date": "2015-07-31T14:17:23Z",
+        "excerpt": "A small tip on rendering blank slate in Active Admin pages.",
+        "_PARENT": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/src/pages/2015-07-31-active-admin-replace-content-in-blank-slate/index.md absPath of file",
+        "parent": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/src/pages/2015-07-31-active-admin-replace-content-in-blank-slate/index.md absPath of file"
+      },
+      "fileAbsolutePath": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/src/pages/2015-07-31-active-admin-replace-content-in-blank-slate/index.md"
+    },
+    "SitePage /offline-plugin-app-shell-fallback/": {
+      "path": "/offline-plugin-app-shell-fallback/",
+      "component": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/node_modules/gatsby-plugin-offline/app-shell.js",
+      "componentChunkName": "component---node-modules-gatsby-plugin-offline-app-shell-js",
+      "layout": "index",
+      "jsonName": "offline-plugin-app-shell-fallback.json",
+      "internalComponentName": "ComponentOfflinePluginAppShellFallback",
+      "updatedAt": 1509545370719,
+      "context": {
+        "_PARENT": "SOURCE"
+      },
+      "pluginCreator___NODE": "Plugin gatsby-plugin-offline",
+      "pluginCreatorId": "Plugin gatsby-plugin-offline",
+      "componentPath": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/node_modules/gatsby-plugin-offline/app-shell.js",
+      "id": "SitePage /offline-plugin-app-shell-fallback/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "62443a456a67946b6d31e4e3060080c2",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /guitar": {
+      "path": "/guitar",
+      "component": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/src/templates/blog-post.js",
+      "context": {
+        "path": "/guitar",
+        "_PARENT": "SOURCE"
+      },
+      "componentChunkName": "component---src-templates-blog-post-js",
+      "layout": "index",
+      "jsonName": "guitar.json",
+      "internalComponentName": "ComponentGuitar",
+      "updatedAt": 1509545370742,
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/src/templates/blog-post.js",
+      "id": "SitePage /guitar",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "abec0bacb64f08fdbb5a703f450ed1d1",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /active-admin-blank-slate": {
+      "path": "/active-admin-blank-slate",
+      "component": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/src/templates/blog-post.js",
+      "context": {
+        "path": "/active-admin-blank-slate",
+        "_PARENT": "SOURCE"
+      },
+      "componentChunkName": "component---src-templates-blog-post-js",
+      "layout": "index",
+      "jsonName": "active-admin-blank-slate.json",
+      "internalComponentName": "ComponentActiveAdminBlankSlate",
+      "updatedAt": 1509545370743,
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/src/templates/blog-post.js",
+      "id": "SitePage /active-admin-blank-slate",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "2fb589f5a8496450c2c1f407564a2146",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /": {
+      "path": "/",
+      "component": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/src/pages/index.js",
+      "componentChunkName": "component---src-pages-index-js",
+      "layout": "index",
+      "jsonName": "index.json",
+      "internalComponentName": "ComponentIndex",
+      "updatedAt": 1509545370753,
+      "context": {
+        "_PARENT": "SOURCE"
+      },
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/src/pages/index.js",
+      "id": "SitePage /",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "0189bb8660d2fb38d3b842f6b44427e2",
+        "owner": "internal-data-bridge"
+      }
+    }
+  },
+  "status": {
+    "plugins": {},
+    "PLUGINS_HASH": "84d5a12212fbda0ba658c799d2bab1d8"
+  },
+  "componentDataDependencies": {
+    "nodes": {
+      "Site": [
+        "/guitar",
+        "/active-admin-blank-slate",
+        "/"
+      ],
+      "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/src/pages/2014-12-20-little-guitar-helper/index.md absPath of file >>> MarkdownRemark": [
+        "/guitar"
+      ],
+      "/Users/yoonwaiyan/Documents/workspace/github-projects/yoonwaiyan.github.io/src/pages/2015-07-31-active-admin-replace-content-in-blank-slate/index.md absPath of file >>> MarkdownRemark": [
+        "/active-admin-blank-slate"
+      ]
+    },
+    "connections": {
+      "MarkdownRemark": [
+        "/"
+      ]
+    }
+  }
+}

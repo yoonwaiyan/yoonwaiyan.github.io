@@ -1,0 +1,13 @@
+# Site settings
+title: waiyan.yoon
+email: waiyanyoon@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Small snippets, CSS/JS playground.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://waiyanyoon.com" # the base hostname & protocol for your site
+twitter_username: waiyanyoon
+github_username:  yoonwaiyan
+footer_copyright: yoonwaiyan
+
+# Build settings
+markdown: kramdown
