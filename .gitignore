@@ -1,4 +1,8 @@
-_site
-.sass-cache
+node_modules
+public
+.gatsby-context.js
+.DS_Store
+.intermediate-representation/
+.cache/
+yarn.lock
 
-_posts/2014-12-21-test.markdown
