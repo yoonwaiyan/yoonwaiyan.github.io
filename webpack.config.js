@@ -35,6 +35,11 @@ module.exports = {
   devServer: {
     publicPath: '/dist'
   },
+  optimization: {
+    splitChunks: {
+      chunks: 'all'
+    }
+  },
   plugins: [
     new HtmlWebpackPlugin({
       filename: __dirname + '/index.html',
