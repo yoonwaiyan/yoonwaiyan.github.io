@@ -1,15 +1,28 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const HtmlWebpackHarddiskPlugin = require('html-webpack-harddisk-plugin');
 
 module.exports = {
-  entry: './src/index.js',
+  entry: path.join(__dirname, 'src/index.js'),
   output: {
     path: path.join(__dirname, 'dist'),
-    filename: '[name].[chunkhash].js'
+    filename: '[name].[hash].js'
   },
   module: {
     rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader'
+        }
+      },
+      {
+        test: /\.jsx?$/,
+        exclude: /node_modules/,
+        use: 'babel-loader'
+      },
       {
         test: /\.(s*)css$/,
         use: ExtractTextPlugin.extract({
@@ -20,13 +33,15 @@ module.exports = {
     ]
   },
   devServer: {
-    contentBase: path.join(__dirname, 'src')
+    publicPath: '/dist'
   },
   plugins: [
     new HtmlWebpackPlugin({
       filename: __dirname + '/index.html',
-      template: './src/index.html'
+      template: path.join(__dirname, 'src/index.html'),
+      alwaysWriteToDisk: true
     }),
-    new ExtractTextPlugin('styles.css')
+    new ExtractTextPlugin('[name].[chunkhash].css'),
+    new HtmlWebpackHarddiskPlugin()
   ]
 };
