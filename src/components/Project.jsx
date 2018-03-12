@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 const Project = ({ project }) => {
-  console.log('project', project);
   return (
     <div className="column is-4">
       <div className="card">
