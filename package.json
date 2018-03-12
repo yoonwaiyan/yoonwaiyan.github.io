@@ -7,8 +7,8 @@
   "license": "MIT",
   "scripts": {
     "clean": "rimraf dist",
-    "start": "webpack-dev-server",
-    "build": "yarn clean && webpack"
+    "start": "webpack-dev-server --mode development",
+    "build": "yarn clean && webpack --mode production"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
