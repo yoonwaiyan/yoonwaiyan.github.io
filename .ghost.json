@@ -1,0 +1,10 @@
+{
+  "development": {
+    "apiUrl": "https://waiyanyoon.com",
+    "contentApiKey": "ad8884630ae038535437a403043a90e905ea4292866596d619a274f08780420d8cdfce6d5a71ed4b04eadc59c736345a6c04727046e184aac285a9ad7e996813"
+  },
+  "production": {
+    "apiUrl": "https://gatsby.ghost.io",
+    "contentApiKey": "9cc5c67c358edfdd81455149d0"
+  }
+}
