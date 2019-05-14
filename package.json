@@ -25,12 +25,14 @@
     "build": "gatsby build",
     "dev": "gatsby develop",
     "lint": "eslint . --ext .js --cache",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy:github": "npm run build && node ./scripts/deploy-github"
   },
   "devDependencies": {
     "eslint": "5.16.0",
     "eslint-plugin-ghost": "0.2.0",
-    "eslint-plugin-react": "7.12.4"
+    "eslint-plugin-react": "7.12.4",
+    "gh-pages": "^2.0.1"
   },
   "dependencies": {
     "@tryghost/helpers": "1.1.2",
