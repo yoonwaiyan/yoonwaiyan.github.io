@@ -8,6 +8,8 @@ tags: ['react', 'javascript']
 description: ''
 ---
 
+![promises](./javascript_promises.svg)
+
 So you've clicked the title to read this post. I know you're a JavaScript developer by then. You've probably seen "promise" and "async / await" flying everywhere in Medium and blog posts written by developers with at least a slight of knowledge about it. There's a big chance that you've been using Promise all this while with the mind of "it just works" without knowing the reason behind the `.then` chain.
 In this post, we'll discover a little bit of history behind Promise, by implementing a couple of API calls to Github to retrieve a user's profile and repositories.
 If you're a seasoned developer for years, you've probably attempted this at some point in your career:
