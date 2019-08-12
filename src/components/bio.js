@@ -54,8 +54,8 @@ const Bio = () => {
                 }}
             />
             <p>
-                Written by <strong>{author}</strong> who lives and works in
-                Petaling Jaya, Malaysia building useful things.
+                Written by <strong>{author}</strong> who works in Petaling Jaya,
+                Malaysia building useful things.
                 {` `}
                 <a href={`https://twitter.com/${social.twitter}`}>
                     Follow on Twitter
