@@ -1,15 +1,18 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
+import React from 'react'
+import { Link, graphql } from 'gatsby'
 
-import Bio from "../components/bio"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import { rhythm, scale } from "../utils/typography"
+import Bio from '../components/bio'
+import Layout from '../components/layout'
+import SEO from '../components/seo'
+import { rhythm, scale } from '../utils/typography'
+
+import('../index.scss')
 
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
+    const tags = post.frontmatter.tags
     const { previous, next } = this.props.pageContext
 
     return (
@@ -30,10 +33,16 @@ class BlogPostTemplate extends React.Component {
           style={{
             ...scale(-1 / 5),
             display: `block`,
-            marginBottom: rhythm(1),
+            marginBottom: rhythm(0.8),
+            marginTop: rhythm(0.5),
           }}
         >
           {post.frontmatter.date}
+          <span className="tags-container">
+            {tags.map(tag => (
+              <span className="tag">{tag}</span>
+            ))}
+          </span>
         </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
@@ -90,6 +99,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        tags
       }
     }
   }
