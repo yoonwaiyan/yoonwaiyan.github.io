@@ -12,8 +12,6 @@ const Tags = ({ pageContext, data, location }) => {
     totalCount === 1 ? '' : 's'
   } tagged with "${tag}"`
 
-  console.log('siteTitle', siteTitle)
-
   return (
     <Layout location={location} title={siteTitle}>
       <h1>{tagHeader}</h1>
