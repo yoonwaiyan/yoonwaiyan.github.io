@@ -7,10 +7,6 @@ const links = [
     title: 'About',
   },
   {
-    url: '/now',
-    title: 'Now',
-  },
-  {
     url: 'https://github.com/yoonwaiyan',
     title: 'Github',
   },
