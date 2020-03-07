@@ -14,8 +14,8 @@ class About extends React.Component {
         <SEO title="About Wai Yan" />
         <h1>About Me</h1>
         <p>
-          I'm a senior full-stack software engineer currently working at
-          Petaling Jaya, Malaysia. I do mainly Ruby on Rails, React, Node.js.
+          I'm a senior full-stack software engineer currently working at Kuala
+          Lumpur, Malaysia. I do mainly Ruby on Rails, React, Node.js.
         </p>
       </Layout>
     )
