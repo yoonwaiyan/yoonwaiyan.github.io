@@ -14,7 +14,7 @@ React developers know what does it mean when they saw this error:
 
 It's simply fixed by adding `<div>` tags between the element. At least it used to be, until I saw `React.Fragment` in a blog and read the new official documentation of React. It's as simple as replacing `<div>` tag with `React.Fragment`:
 
-```javacript
+```javascript
 import React, { Fragment } from 'react';
 
 const MyFragment = () => (
