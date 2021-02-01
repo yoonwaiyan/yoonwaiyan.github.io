@@ -8,14 +8,14 @@ const links = [
     type: 'internal',
   },
   {
-    url: 'https://github.com/yoonwaiyan',
-    pageTitle: 'Github',
-    type: 'external',
-  },
-  {
     url: '/contact',
     pageTitle: 'Contact',
     type: 'internal',
+  },
+  {
+    url: 'https://github.com/yoonwaiyan',
+    pageTitle: 'Github',
+    type: 'external',
   },
 ]
 
@@ -32,9 +32,7 @@ const Layout = ({ title, children }) => {
           ))}
         </nav>
       </div>
-      <div className="container flex flex-wrap mx-auto">
-        <main className="container mx-auto max-w-4xl">{children}</main>
-      </div>
+      <main className="container flex flex-wrap mx-auto">{children}</main>
       <footer className="container flex flex-wrap mx-auto max-w-4xl px-10 py-6">
         © {new Date().getFullYear()}, Built with Gatsby
       </footer>
