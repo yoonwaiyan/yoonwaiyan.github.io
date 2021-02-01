@@ -8,12 +8,15 @@ const BlogPostItem = ({ node }) => {
   const tags = node.frontmatter.tags
 
   return (
-    <div key={node.fields.slug} className="mx-auto max-w-prose px-10 py-6">
+    <div
+      key={node.fields.slug}
+      className="mx-auto w-screen xl:w-max max-w-prose px-10 py-6"
+    >
       <div className="flex justify-between items-center">
         <span className="font-light text-gray-600">
           {node.frontmatter.date}
         </span>
-        <div className="space-x-2">
+        <div className="space-x-2 max-w-1/2 overflow-x-hidden">
           {tags.map(tag => (
             <Tag tag={tag} key={tag} />
           ))}
