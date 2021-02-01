@@ -4,81 +4,78 @@ import { Link, graphql } from 'gatsby'
 import Bio from '../components/bio'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import Tag from '../components/tag'
 import { rhythm, scale } from '../utils/typography'
 
-import('./blog-post.scss')
+import('../styles/global.css')
 
-class BlogPostTemplate extends React.Component {
-  render() {
-    const post = this.props.data.markdownRemark
-    const siteTitle = this.props.data.site.siteMetadata.title
-    const tags = post.frontmatter.tags
-    const { previous, next } = this.props.pageContext
+const BlogPostTemplate = ({ data, pageContext, location }) => {
+  const post = data.markdownRemark
+  const siteTitle = data.site.siteMetadata.title
+  const tags = post.frontmatter.tags
+  const { previous, next } = pageContext
 
-    return (
-      <Layout location={this.props.location} title={siteTitle}>
-        <SEO
-          title={post.frontmatter.title}
-          description={post.frontmatter.description || post.excerpt}
-        />
-        <h1
-          style={{
-            marginTop: rhythm(1),
-            marginBottom: 0,
-          }}
-        >
-          {post.frontmatter.title}
-        </h1>
-        <p
-          style={{
-            ...scale(-1 / 5),
-            display: `block`,
-            marginBottom: rhythm(0.8),
-            marginTop: rhythm(0.5),
-          }}
-        >
-          {post.frontmatter.date}
-          <span className="tags-container">
+  return (
+    <Layout location={location} title={siteTitle}>
+      <SEO
+        title={post.frontmatter.title}
+        description={post.frontmatter.description || post.excerpt}
+      />
+
+      <div className="divide-y-2 divide-solid">
+        <div className="pb-6">
+          <div className="flex justify-between items-center">
+            <span className="font-light text-gray-600">
+              {post.frontmatter.date}
+            </span>
+          </div>
+
+          <div className="mt-2 space-x-2">
             {tags.map(tag => (
-              <span className="tag">{tag}</span>
+              <Tag tag={tag} />
             ))}
-          </span>
-        </p>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        <hr
-          style={{
-            marginBottom: rhythm(1),
-          }}
-        />
-        <Bio />
+          </div>
 
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0,
-          }}
-        >
-          <li>
-            {previous && (
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
-            )}
-          </li>
-          <li>
-            {next && (
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
-              </Link>
-            )}
-          </li>
-        </ul>
-      </Layout>
-    )
-  }
+          <div className="mt-2 prose prose-2xl font-bold">
+            {post.frontmatter.title}
+          </div>
+
+          <div
+            className="prose"
+            dangerouslySetInnerHTML={{ __html: post.html }}
+          />
+        </div>
+        <div className="pt-6">
+          <Bio />
+
+          <ul
+            style={{
+              display: `flex`,
+              flexWrap: `wrap`,
+              justifyContent: `space-between`,
+              listStyle: `none`,
+              padding: 0,
+            }}
+          >
+            <li>
+              {previous && (
+                <Link to={previous.fields.slug} rel="prev">
+                  ← {previous.frontmatter.title}
+                </Link>
+              )}
+            </li>
+            <li>
+              {next && (
+                <Link to={next.fields.slug} rel="next">
+                  {next.frontmatter.title} →
+                </Link>
+              )}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </Layout>
+  )
 }
 
 export default BlogPostTemplate

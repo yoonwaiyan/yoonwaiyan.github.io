@@ -5,7 +5,9 @@ module.exports = {
     extend: {},
   },
   variants: {
-    extend: {},
+    extend: {
+      borderWidth: ['first'],
+    },
   },
-  plugins: ['gatsby-plugin-postcss'],
+  plugins: ['gatsby-plugin-postcss', require('@tailwindcss/typography')],
 }
