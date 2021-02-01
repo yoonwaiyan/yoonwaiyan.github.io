@@ -19,7 +19,9 @@ const links = [
 const Navigation = () => (
   <nav style={{ display: 'inline-block' }}>
     {links.map(({ url, title }) => (
-      <LinkItem url={url}>{title}</LinkItem>
+      <LinkItem url={url} key={url}>
+        {title}
+      </LinkItem>
     ))}
   </nav>
 )

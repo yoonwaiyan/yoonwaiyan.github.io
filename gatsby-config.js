@@ -1,3 +1,5 @@
+const tailwindConfig = require('./tailwind.config.js')
+
 module.exports = {
   siteMetadata: {
     title: `waiyanyoon.com`,
@@ -98,5 +100,11 @@ module.exports = {
       },
     },
     `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-postcss`,
+      options: {
+        postCssPlugins: [require(`tailwindcss`)(tailwindConfig)],
+      },
+    },
   ],
 }

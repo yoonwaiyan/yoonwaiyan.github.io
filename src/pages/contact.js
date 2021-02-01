@@ -13,10 +13,10 @@ const Contact = ({ location, data }) => (
       <input type="hidden" name="_next" value="//waiyanyoon.com" />
 
       <div className="field">
-        <label className="label">Email</label>
+        <label className="leading-loose">Email</label>
         <div className="control">
           <input
-            className="input"
+            className="px-4 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600"
             type="email"
             name="email"
             placeholder="Your email"
