@@ -22,8 +22,8 @@ const links = [
 const Layout = ({ title, children }) => {
   return (
     <>
-      <div className="container mx-auto max-w-4xl px-10 py-6 flex justify-between items-center">
-        <Link className="shadow-none" to={`/`}>
+      <div className="container mx-auto max-w-4xl px-10 py-6 flex flex-col sm:flex-row justify-between items-center">
+        <Link className="shadow-none font-bold prose-xl" to={`/`}>
           {title}
         </Link>
         <nav className="space-x-12 main-nav sm:flex mt-12 sm:mt-0 flex-col sm:flex-row items-center relative flex-1 justify-end">
@@ -32,7 +32,9 @@ const Layout = ({ title, children }) => {
           ))}
         </nav>
       </div>
-      <main className="container flex flex-wrap mx-auto">{children}</main>
+      <main className="container flex flex-wrap flex-col mx-auto">
+        {children}
+      </main>
       <footer className="container flex flex-wrap mx-auto max-w-4xl px-10 py-6">
         © {new Date().getFullYear()}, Built with Gatsby
       </footer>

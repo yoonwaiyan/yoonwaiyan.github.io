@@ -21,12 +21,15 @@ const TagsPage = ({
 }) => (
   <Layout location={location} title={title}>
     <Helmet title={title} />
-    <div>
-      <h1>Tags</h1>
-      <ul>
+    <div className="mx-auto w-full max-w-prose px-10 py-6">
+      <div className="mt-2 prose prose-2xl font-bold">Tags</div>
+      <ul className="mt-2">
         {group.map(tag => (
           <li key={tag.fieldValue}>
-            <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
+            <Link
+              to={`/tags/${kebabCase(tag.fieldValue)}/`}
+              className="shadow-none hover:underline"
+            >
               {tag.fieldValue} ({tag.totalCount})
             </Link>
           </li>

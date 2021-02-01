@@ -41,7 +41,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             </div>
 
             <div
-              className="prose"
+              className="prose mt-2"
               dangerouslySetInnerHTML={{ __html: post.html }}
             />
           </div>

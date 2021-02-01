@@ -14,7 +14,7 @@ class About extends React.Component {
         <SEO title="About Wai Yan" />
         <div className="mx-auto max-w-prose px-10 py-6">
           <div className="mt-2 prose prose-2xl font-bold">About Wai Yan</div>
-          <p>
+          <p className="mt-2 prose">
             I'm a senior full-stack software engineer currently working at Kuala
             Lumpur, Malaysia. I do mainly Ruby on Rails, React, Node.js. I know
             some Docker, Serverless, and Python too.

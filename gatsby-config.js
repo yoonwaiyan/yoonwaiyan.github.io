@@ -2,8 +2,8 @@ const tailwindConfig = require('./tailwind.config.js')
 
 module.exports = {
   siteMetadata: {
-    title: `waiyanyoon.com`,
-    author: `Waiyan Yoon`,
+    title: `waiyan.yoon`,
+    author: `Wai Yan Yoon`,
     description: `(dev) things I've learned`,
     siteUrl: `https://waiyanyoon.com`,
     social: {
