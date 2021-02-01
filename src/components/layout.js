@@ -1,65 +1,68 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import Navigation from '../components/navigation'
+const links = [
+  {
+    url: '/about',
+    pageTitle: 'About',
+    type: 'internal',
+  },
+  {
+    url: 'https://github.com/yoonwaiyan',
+    pageTitle: 'Github',
+    type: 'external',
+  },
+  {
+    url: '/contact',
+    pageTitle: 'Contact',
+    type: 'internal',
+  },
+]
 
-import { rhythm, scale } from '../utils/typography'
-
-class Layout extends React.Component {
-  render() {
-    const { location, title, children } = this.props
-    const rootPath = `${__PATH_PREFIX__}/`
-    return (
-      <div
-        style={{
-          marginLeft: `auto`,
-          marginRight: `auto`,
-          maxWidth: rhythm(30),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-        }}
-      >
-        <header
-          style={{
-            display: 'flex',
-            justifyContent: 'space-between',
-          }}
-        >
-          <Header title={title} />
-          <Navigation />
-        </header>
-        <main>{children}</main>
-        <Footer />
+const Layout = ({ title, children }) => {
+  return (
+    <>
+      <div className="container mx-auto max-w-4xl px-10 py-6 flex justify-between items-center">
+        <Link className="shadow-none" to={`/`}>
+          {title}
+        </Link>
+        <nav className="space-x-12 main-nav sm:flex mt-12 sm:mt-0 flex-col sm:flex-row items-center relative flex-1 justify-end">
+          {links.map(item => (
+            <NavLink item={item} key={item.url} />
+          ))}
+        </nav>
       </div>
+      <div className="container flex flex-wrap mx-auto">
+        <main className="container mx-auto max-w-4xl">{children}</main>
+      </div>
+      <footer className="container flex flex-wrap mx-auto max-w-4xl px-10 py-6">
+        © {new Date().getFullYear()}, Built with Gatsby
+      </footer>
+    </>
+  )
+}
+
+const NavLink = ({ item: { url, pageTitle, type } }) => {
+  const classes = 'shadow-none hover:underline'
+  if (type === 'internal') {
+    return (
+      <Link className={classes} to={url}>
+        {pageTitle}
+      </Link>
+    )
+  } else {
+    return (
+      <a
+        href={url}
+        key={url}
+        className={classes}
+        target="_blank"
+        rel="noreferrer"
+      >
+        {pageTitle}
+      </a>
     )
   }
 }
-
-const Header = ({ title }) => (
-  <span
-    style={{
-      marginBottom: rhythm(0.5),
-      marginTop: 0,
-    }}
-  >
-    <Link
-      style={{
-        boxShadow: `none`,
-        textDecoration: `none`,
-        color: `inherit`,
-      }}
-      to={`/`}
-    >
-      {title}
-    </Link>
-  </span>
-)
-
-const Footer = () => (
-  <footer>
-    © {new Date().getFullYear()}, Built with
-    {` `}
-    <a href="https://www.gatsbyjs.org">Gatsby</a>
-  </footer>
-)
 
 export default Layout

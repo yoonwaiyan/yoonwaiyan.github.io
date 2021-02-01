@@ -8,7 +8,7 @@ const BlogPostItem = ({ node }) => {
   const tags = node.frontmatter.tags
 
   return (
-    <div key={node.fields.slug} className="max-w-4xl px-10 py-6 bg-white">
+    <div key={node.fields.slug} className="max-w-4xl px-10 py-6">
       <div className="flex justify-between items-center">
         <span className="font-light text-gray-600">
           {node.frontmatter.date}
