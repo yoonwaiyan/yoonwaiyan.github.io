@@ -30,9 +30,9 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
               </span>
             </div>
 
-            <div className="mt-2 prose prose-2xl font-bold">
+            <h1 className="mt-2 prose prose-2xl font-bold">
               {post.frontmatter.title}
-            </div>
+            </h1>
 
             <div className="mt-2 space-x-2">
               {tags.map(tag => (
