@@ -32,26 +32,16 @@ const Bio = () => {
 
   const { author, social } = data.site.siteMetadata
   return (
-    <div class="flex flex-row mb-10">
-      <Image
-        className="mr-4"
-        fixed={data.avatar.childImageSharp.fixed}
-        alt={author}
-        imgStyle={{
-          borderRadius: `50%`,
-        }}
-      />
-      <p className="flex flex-col">
-        {author}'s sharing on web development.
-        <a
-          href={`https://twitter.com/${social.twitter}`}
-          className="shadow-none hover:underline"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Follow on Twitter
-        </a>
-      </p>
+    <div className="flex flex-col mb-10">
+      {author}'s sharing on web development.
+      <a
+        href={`https://twitter.com/${social.twitter}`}
+        className="shadow-none hover:underline"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Follow on Twitter
+      </a>
     </div>
   )
 }

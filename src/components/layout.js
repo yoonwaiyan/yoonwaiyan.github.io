@@ -22,7 +22,7 @@ const links = [
 const Layout = ({ title, children }) => {
   return (
     <>
-      <div className="container mx-auto max-w-4xl px-10 py-6 flex flex-col sm:flex-row justify-between items-center">
+      <div className="container mx-auto max-w-prose px-10 py-6 flex flex-col sm:flex-row justify-between items-center">
         <Link className="shadow-none font-bold prose-xl" to={`/`}>
           {title}
         </Link>
@@ -35,7 +35,7 @@ const Layout = ({ title, children }) => {
       <main className="container flex flex-wrap flex-col mx-auto">
         {children}
       </main>
-      <footer className="container flex flex-wrap mx-auto max-w-4xl px-10 py-6">
+      <footer className="container flex flex-wrap mx-auto max-w-prose px-10 py-6">
         © {new Date().getFullYear()}, Built with Gatsby
       </footer>
     </>

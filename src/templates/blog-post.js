@@ -21,7 +21,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         description={post.frontmatter.description || post.excerpt}
       />
 
-      <div className="mx-auto max-w-prose px-10 py-6">
+      <div className="mx-auto w-screen xl:w-max max-w-prose px-10 py-6 break-words">
         <div className="divide-y-2 divide-solid">
           <div className="pb-6">
             <div className="flex justify-between items-center">

@@ -12,11 +12,11 @@ const BlogPostItem = ({ node }) => {
       key={node.fields.slug}
       className="mx-auto w-screen xl:w-max max-w-prose px-10 py-6"
     >
-      <div className="flex justify-between items-center">
+      <div className="flex flex-col justify-start sm:justify-between sm:flex-row sm:items-center max-w-full">
         <span className="font-light text-gray-600">
           {node.frontmatter.date}
         </span>
-        <div className="space-x-2 max-w-1/2 overflow-x-hidden">
+        <div className="space-x-2 overflow-x-hidden my-2 sm:mt-none break-words">
           {tags.map(tag => (
             <Tag tag={tag} key={tag} />
           ))}
