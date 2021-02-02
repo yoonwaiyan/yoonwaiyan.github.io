@@ -12,10 +12,7 @@ const Contact = ({ location, data }) => (
     <SEO title="Contact Me" />
     <div className="mx-auto px-10 py-6 w-full max-w-prose">
       <div className="mt-2 prose prose-2xl font-bold">Contact Me</div>
-      <form
-        method="POST"
-        action="https://formspree.io/tfca21ajd@relay.firefox.com"
-      >
+      <form method="POST" action="https://formspree.io/f/xleovjzv">
         <input type="text" name="_gotcha" style={{ display: 'none' }} />
         <input type="hidden" name="_next" value="//waiyanyoon.com" />
 
