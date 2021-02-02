@@ -21,16 +21,22 @@ const Tags = ({ pageContext, data, location }) => {
             const { slug } = node.fields
             const { title } = node.frontmatter
 
-            return (
-              <li key={slug}>
-                <Link to={slug}>{title}</Link>
-              </li>
-            )
+            return <TagItem slug={slug}>{title}</TagItem>
           })}
+          <TagItem slug={'/tags'}>All tags</TagItem>
         </ul>
-        <Link to="/tags">All tags</Link>
       </div>
     </Layout>
+  )
+}
+
+const TagItem = ({ slug, children }) => {
+  return (
+    <li key={slug} className="mt-2">
+      <Link to={slug} className="shadow-none hover:underline">
+        {children}
+      </Link>
+    </li>
   )
 }
 

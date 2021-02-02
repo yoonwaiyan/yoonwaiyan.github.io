@@ -5,21 +5,18 @@ import Layout from '../components/layout'
 import BlogPostItem from '../components/BlogPostItem'
 import SEO from '../components/seo'
 
-class BlogIndex extends React.Component {
-  render() {
-    const { data } = this.props
-    const siteTitle = data.site.siteMetadata.title
-    const posts = data.allMarkdownRemark.edges
+const BlogIndex = ({ data, location }) => {
+  const siteTitle = data.site.siteMetadata.title
+  const posts = data.allMarkdownRemark.edges
 
-    return (
-      <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="All posts" />
-        {posts.map(({ node }) => {
-          return <BlogPostItem node={node} key={node.fields.slug} />
-        })}
-      </Layout>
-    )
-  }
+  return (
+    <Layout location={location} title={siteTitle}>
+      <SEO title="All posts" />
+      {posts.map(({ node }) => {
+        return <BlogPostItem node={node} key={node.fields.slug} />
+      })}
+    </Layout>
+  )
 }
 
 export default BlogIndex
