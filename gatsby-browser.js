@@ -1,3 +1,2 @@
-require('prismjs/themes/prism-tomorrow.css')
-
 import './src/styles/global.css'
+require('prismjs/themes/prism-tomorrow.css')

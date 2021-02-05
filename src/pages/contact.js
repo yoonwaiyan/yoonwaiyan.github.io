@@ -18,7 +18,9 @@ const Contact = ({ location, data }) => (
 
         <div className="space-y-4 mt-2">
           <div className="field">
-            <label className="label">Email</label>
+            <label className="label" htmlFor="email">
+              Email
+            </label>
             <div className="control mt-2">
               <input
                 className={formInputClassName}
@@ -31,7 +33,9 @@ const Contact = ({ location, data }) => (
           </div>
 
           <div className="field">
-            <label className="label">Subject</label>
+            <label className="label" htmlFor="_subject">
+              Subject
+            </label>
             <div className="control mt-2">
               <input
                 className={formInputClassName}
@@ -43,7 +47,9 @@ const Contact = ({ location, data }) => (
           </div>
 
           <div className="field">
-            <label className="label">Message</label>
+            <label className="label" htmlFor="message">
+              Message
+            </label>
             <div className="control mt-2">
               <textarea
                 required
