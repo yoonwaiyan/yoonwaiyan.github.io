@@ -100,5 +100,6 @@ module.exports = {
         postCssPlugins: [require(`tailwindcss`)(tailwindConfig)],
       },
     },
+    `gatsby-plugin-dark-mode`,
   ],
 }

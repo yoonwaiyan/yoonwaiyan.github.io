@@ -25,12 +25,12 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         <div className="divide-y-2 divide-solid">
           <div className="pb-6">
             <div className="flex justify-between items-center">
-              <span className="font-light text-gray-600">
+              <span className="font-light text-gray-600 dark:text-gray-50">
                 {post.frontmatter.date}
               </span>
             </div>
 
-            <h1 className="mt-2 prose prose-2xl font-bold">
+            <h1 className="mt-2 prose prose-2xl font-bold dark:text-gray-50">
               {post.frontmatter.title}
             </h1>
 
@@ -41,7 +41,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             </div>
 
             <div
-              className="prose mt-2"
+              className="prose mt-2 dark:text-gray-50"
               dangerouslySetInnerHTML={{ __html: post.html }}
             />
           </div>
