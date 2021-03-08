@@ -19,7 +19,7 @@ const links = [
 const Layout = ({ title, children }) => {
   return (
     <>
-      <div className="bg-white dark:bg-gray-900 text-gray-800 dark:text-white">
+      <div className="bg-white dark:bg-gray-900 text-gray-800 dark:text-white min-h-screen">
         <div className="container mx-auto max-w-prose px-10 py-6 flex flex-col sm:flex-row justify-between items-center">
           <Link className="shadow-none font-bold prose-xl" to={`/`}>
             {title}

@@ -7,6 +7,10 @@ pre[class*='language-'] {
   font-size: 0.9em !important;
 }
 
+.prose {
+  @apply text-gray-800 dark:text-white;
+}
+
 .prose code {
   color: #ccc;
 }
