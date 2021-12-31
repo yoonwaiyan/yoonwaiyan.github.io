@@ -38,8 +38,8 @@ void function() {
 <p>After that, you’ll need to setup the service to receive emails and “forward” it to your app. To test this out, you’ll need to expose your local development web server to the public through services such as <a href="https://localtunnel.github.io/www/">localtunnel</a> or <a href="https://ngrok.com/">ngrok</a>. By default griddler gem handles the incoming emails in <code class="language-text">/email_processor</code> route, so your setup should include a setting to route your emails through HTTP request to your local web server, such as <code class="language-text">https://test-localtunnel-11.localtunnel.me/email_processor</code>.</p>
 <p>Now finally it’s time to dive in the code. The code snippets below are based on Mailgun service that I configured personally, feel free to substitute with other adapters available to griddler.</p>
 <p>Add these gems to your Gemfile:</p>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">gem &#39;griddler&#39;
-gem &#39;griddler-mailgun&#39;</code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">gem 'griddler'
+gem 'griddler-mailgun'</code></pre></div>
 <p>And configure your griddler to use the adapter of your choice:</p>
 <div class="gatsby-highlight" data-language="ruby"><pre class="language-ruby"><code class="language-ruby"><span class="token constant">Griddler</span><span class="token punctuation">.</span>configure <span class="token keyword">do</span> <span class="token operator">|</span>config<span class="token operator">|</span>
   config<span class="token punctuation">.</span>email_service <span class="token operator">=</span> <span class="token symbol">:mailgun</span>

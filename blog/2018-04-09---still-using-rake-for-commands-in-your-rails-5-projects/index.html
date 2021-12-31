@@ -39,15 +39,15 @@ rake aborted<span class="token operator">!</span>
 Gem::LoadError: You have already activated rake <span class="token number">12.3</span>.1, but your Gemfile requires rake <span class="token number">12.3</span>.0. Prepending <span class="token variable"><span class="token variable">`</span>bundle <span class="token builtin class-name">exec</span><span class="token variable">`</span></span> to your <span class="token builtin class-name">command</span> may solve this.
 /Users/waiyanyoon/Documents/workspace/project/config/boot.rb:3:in <span class="token variable"><span class="token variable">`</span><span class="token operator">&lt;</span>top <span class="token punctuation">(</span>required<span class="token punctuation">)</span><span class="token operator">></span>'
 /Users/waiyanyoon/Documents/workspace/project/config/application.rb:1:in <span class="token variable">`</span></span>require_relative<span class="token string">'
-/Users/waiyanyoon/Documents/workspace/project/config/application.rb:1:in <span class="token variable"><span class="token variable">`</span><span class="token operator">&lt;</span>top <span class="token punctuation">(</span>required<span class="token punctuation">)</span><span class="token operator">></span>'
-/Users/waiyanyoon/Documents/workspace/project/Rakefile:4:in <span class="token variable">`</span></span>&lt;top (required)>'</span>
+/Users/waiyanyoon/Documents/workspace/project/config/application.rb:1:in `&lt;top (required)>'</span>
+/Users/waiyanyoon/Documents/workspace/project/Rakefile:4:in <span class="token variable"><span class="token variable">`</span><span class="token operator">&lt;</span>top <span class="token punctuation">(</span>required<span class="token punctuation">)</span><span class="token operator">></span>'
 
 Caused by:
 LoadError: cannot load such <span class="token function">file</span> -- bundler/setup
-/Users/waiyanyoon/Documents/workspace/project/config/boot.rb:3:in <span class="token variable"><span class="token variable">`</span><span class="token operator">&lt;</span>top <span class="token punctuation">(</span>required<span class="token punctuation">)</span><span class="token operator">></span>'
-/Users/waiyanyoon/Documents/workspace/project/config/application.rb:1:in <span class="token variable">`</span></span>require_relative<span class="token string">'
+/Users/waiyanyoon/Documents/workspace/project/config/boot.rb:3:in <span class="token variable">`</span></span><span class="token operator">&lt;</span>top <span class="token punctuation">(</span>required<span class="token punctuation">)</span><span class="token operator">></span><span class="token string">'
+/Users/waiyanyoon/Documents/workspace/project/config/application.rb:1:in `require_relative'</span>
 /Users/waiyanyoon/Documents/workspace/project/config/application.rb:1:in <span class="token variable"><span class="token variable">`</span><span class="token operator">&lt;</span>top <span class="token punctuation">(</span>required<span class="token punctuation">)</span><span class="token operator">></span>'
-/Users/waiyanyoon/Documents/workspace/project/Rakefile:4:in <span class="token variable">`</span></span>&lt;top (required)>'</span>
+/Users/waiyanyoon/Documents/workspace/project/Rakefile:4:in <span class="token variable">`</span></span><span class="token operator">&lt;</span>top <span class="token punctuation">(</span>required<span class="token punctuation">)</span><span class="token operator">></span>'
 <span class="token punctuation">(</span>See full trace by running task with --trace<span class="token punctuation">)</span></code></pre></div>
 <p>So now I replaced my <code class="language-text">rake</code> commands to use <code class="language-text">rails</code> instead for all my commands:</p>
 <div class="gatsby-highlight" data-language="shell"><pre class="language-shell"><code class="language-shell">$ rails jobs:workoff</code></pre></div>

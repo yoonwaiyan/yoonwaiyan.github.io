@@ -60,11 +60,11 @@ void function() {
 </ol>
 <p>Solution #1 didn’t work out well for capistrano in our case, thus we have used solution #2 for this app. Copying the file to production server that’s being managed by capistrano means I have to configure something so that I don’t copy the same key to server everytime we deploy the application. These are the steps to deploy the application successfully for the first time:</p>
 <ol>
-<li>Copy <code class="language-text">config/master.key</code> from local filesystem to the production server under <code class="language-text">&lt;project_root&gt;/shared/config/master.key</code>.</li>
+<li>Copy <code class="language-text">config/master.key</code> from local filesystem to the production server under <code class="language-text">&lt;project_root>/shared/config/master.key</code>.</li>
 <li>
 <p>Configure capistrano’s <code class="language-text">config/deploy.rb</code> to include this line:</p>
 <div class="gatsby-highlight" data-language="ruby"><pre class="language-ruby"><code class="language-ruby">  set <span class="token symbol">:linked_files</span><span class="token punctuation">,</span> <span class="token string">%w{config/master.key}</span></code></pre></div>
-<p>By doing this you’re telling Capistrano to symlink <code class="language-text">config/master.key</code> to <code class="language-text">&lt;project_root&gt;/shared/config/master.key</code> which contains the master key you’ve just copied to the server.</p>
+<p>By doing this you’re telling Capistrano to symlink <code class="language-text">config/master.key</code> to <code class="language-text">&lt;project_root>/shared/config/master.key</code> which contains the master key you’ve just copied to the server.</p>
 </li>
 <li>Deploy app again and verify that deployment is successful.</li>
 <li>Commit this confguration changes. Don’t check-in <code class="language-text">config/master.key</code>!</li>
