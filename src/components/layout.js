@@ -1,18 +1,18 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import * as React from "react"
+import { Link } from "gatsby"
 
-import ThemeToggle from './ThemeToggle'
+import ThemeToggle from "./ThemeToggle"
 
 const links = [
   {
-    url: '/about',
-    pageTitle: 'About',
-    type: 'internal',
+    url: "/about",
+    pageTitle: "About",
+    type: "internal",
   },
   {
-    url: 'https://github.com/yoonwaiyan',
-    pageTitle: 'Github',
-    type: 'external',
+    url: "https://github.com/yoonwaiyan",
+    pageTitle: "Github",
+    type: "external",
   },
 ]
 
@@ -43,8 +43,8 @@ const Layout = ({ title, children }) => {
 }
 
 const NavLink = ({ item: { url, pageTitle, type } }) => {
-  const classes = 'shadow-none hover:underline'
-  if (type === 'internal') {
+  const classes = "shadow-none hover:underline"
+  if (type === "internal") {
     return (
       <Link className={classes} to={url}>
         {pageTitle}

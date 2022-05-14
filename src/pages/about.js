@@ -1,22 +1,23 @@
-import React from 'react'
-import { graphql } from 'gatsby'
+import React from "react"
+import { graphql } from "gatsby"
 
-import Layout from '../components/layout'
-import SEO from '../components/seo'
+import Layout from "../components/layout"
+import Seo from "../components/seo"
 
-const proficient = ['Ruby on Rails', 'React']
+const proficient = ["Ruby on Rails", "React"]
 
 const activelyUsed = [
-  'MySQL',
-  'PostgreSQL',
-  'AWS',
-  'MongoDB',
-  'Git',
-  'Webpack',
-  'CSS/SASS',
-  'SASS',
-  'UI/UX',
-  'Cypress',
+  "Elixir",
+  "MySQL",
+  "PostgreSQL",
+  "AWS",
+  "MongoDB",
+  "Git",
+  "Webpack",
+  "CSS/SASS",
+  "SASS",
+  "UI/UX",
+  "Cypress",
 ]
 
 const About = ({ data, location }) => {
@@ -24,7 +25,7 @@ const About = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="About Wai Yan" />
+      <Seo title="About Wai Yan" />
       <div className="mx-auto max-w-prose px-10 py-6">
         <section>
           <h2 className="mt-2 prose prose-2xl font-bold">About Wai Yan</h2>
@@ -48,14 +49,14 @@ export default About
 
 const List = ({ title, list }) => {
   return (
-    <p className="mb-4 prose">
-      {title}
-      <ul>
+    <div className="mb-4 prose">
+      {title}:
+      <ul className="list-disc">
         {list.map(el => (
-          <li>{el}</li>
+          <li key={el}>{el}</li>
         ))}
       </ul>
-    </p>
+    </div>
   )
 }
 

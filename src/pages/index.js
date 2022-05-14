@@ -1,19 +1,34 @@
-import React from 'react'
-import { graphql } from 'gatsby'
+import * as React from "react"
+import { graphql } from "gatsby"
 
-import Layout from '../components/layout'
-import BlogPostItem from '../components/BlogPostItem'
-import SEO from '../components/seo'
+import Bio from "../components/bio"
+import Layout from "../components/layout"
+import Seo from "../components/seo"
+import BlogPostItem from "../components/BlogPostItem"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
-  const posts = data.allMarkdownRemark.edges
+  const posts = data.allMarkdownRemark.nodes
+
+  if (posts.length === 0) {
+    return (
+      <Layout location={location} title={siteTitle}>
+        <Seo title="All posts" />
+        <Bio />
+        <p>
+          No blog posts found. Add markdown posts to "content/blog" (or the
+          directory you specified for the "gatsby-source-filesystem" plugin in
+          gatsby-config.js).
+        </p>
+      </Layout>
+    )
+  }
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="All posts" />
-      {posts.map(({ node }) => {
-        return <BlogPostItem node={node} key={node.fields.slug} />
+      <Seo title="All posts" />
+      {posts.map(post => {
+        return <BlogPostItem node={post} key={post.fields.slug} />
       })}
     </Layout>
   )
@@ -29,18 +44,16 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      edges {
-        node {
-          excerpt
-          fields {
-            slug
-          }
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            title
-            description
-            tags
-          }
+      nodes {
+        excerpt
+        fields {
+          slug
+        }
+        frontmatter {
+          date(formatString: "MMMM DD, YYYY")
+          title
+          description
+          tags
         }
       }
     }
