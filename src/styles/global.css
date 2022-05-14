@@ -38,6 +38,6 @@ h6 {
   transition: all 0.3s ease-in-out;
 }
 
-input:checked ~ .toggle__dot {
+input:checked~.toggle__dot {
   transform: translateX(100%);
 }

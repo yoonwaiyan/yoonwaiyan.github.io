@@ -1,15 +1,15 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react"
+import PropTypes from "prop-types"
 
-import { Link, graphql } from 'gatsby'
-import Layout from '../components/layout'
+import { Link, graphql } from "gatsby"
+import Layout from "../components/layout"
 
 const Tags = ({ pageContext, data, location }) => {
   const { tag } = pageContext
   const { edges, totalCount } = data.allMarkdownRemark
   const siteTitle = data.site.siteMetadata.title
   const tagHeader = `${totalCount} post${
-    totalCount === 1 ? '' : 's'
+    totalCount === 1 ? "" : "s"
   } tagged with "${tag}"`
 
   return (
@@ -21,9 +21,13 @@ const Tags = ({ pageContext, data, location }) => {
             const { slug } = node.fields
             const { title } = node.frontmatter
 
-            return <TagItem slug={slug}>{title}</TagItem>
+            return (
+              <TagItem key={slug} slug={slug}>
+                {title}
+              </TagItem>
+            )
           })}
-          <TagItem slug={'/tags'}>All tags</TagItem>
+          <TagItem slug={"/tags"}>All tags</TagItem>
         </ul>
       </div>
     </Layout>
@@ -66,11 +70,10 @@ Tags.propTypes = {
 export default Tags
 
 export const pageQuery = graphql`
-  query($tag: String) {
+  query ($tag: String) {
     site {
       siteMetadata {
         title
-        author
       }
     }
     allMarkdownRemark(
