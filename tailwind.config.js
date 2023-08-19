@@ -1,13 +1,13 @@
 module.exports = {
-  purge: ["./src/**/*.{js,jsx,ts,tsx}"],
-  darkMode: "class",
+  purge: ['./src/{pages,components}/*.{js,jsx,ts,tsx}'],
+  darkMode: 'class',
   theme: {
     extend: {},
   },
   variants: {
     extend: {
-      borderWidth: ["first"],
+      borderWidth: ['first'],
     },
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [require('@tailwindcss/typography')],
 }

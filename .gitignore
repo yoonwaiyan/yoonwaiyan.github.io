@@ -24,3 +24,4 @@ public
 yarn-error.log
 
 backup/
+node_modules
