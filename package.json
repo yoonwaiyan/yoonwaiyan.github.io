@@ -7,7 +7,7 @@
   "dependencies": {
     "@tailwindcss/typography": "^0.5.2",
     "@tinacms/cli": "^1.5.28",
-    "gatsby": "^4.14.0",
+    "gatsby": "^4.25.7",
     "gatsby-plugin-dark-mode": "^1.1.2",
     "gatsby-plugin-feed": "^4.14.0",
     "gatsby-plugin-gatsby-cloud": "^4.14.0",
