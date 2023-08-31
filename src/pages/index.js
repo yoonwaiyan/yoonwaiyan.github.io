@@ -1,16 +1,16 @@
-import * as React from 'react'
-import { graphql } from 'gatsby'
+import * as React from "react"
+import { graphql } from "gatsby"
 
-import Bio from '../components/bio'
-import Layout from '../components/layout'
-import Seo from '../components/seo'
-import BlogPostItem from '../components/BlogPostItem'
+import Bio from "../components/bio"
+import Layout from "../components/layout"
+import Seo from "../components/seo"
+import BlogPostItem from "../components/BlogPostItem"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.nodes
 
-  if (posts === undefined || posts.length === 0) {
+  if (posts.length === 0) {
     return (
       <Layout location={location} title={siteTitle}>
         <Seo title="All posts" />
@@ -27,7 +27,7 @@ const BlogIndex = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <Seo title="All posts" />
-      {posts.map((post) => {
+      {posts.map(post => {
         return <BlogPostItem node={post} key={post.fields.slug} />
       })}
     </Layout>
@@ -36,24 +36,26 @@ const BlogIndex = ({ data, location }) => {
 
 export default BlogIndex
 
-export const pageQuery = graphql`{
-  site {
-    siteMetadata {
-      title
-    }
-  }
-  allMarkdownRemark(sort: {frontmatter: {date: DESC}}) {
-    nodes {
-      excerpt
-      fields {
-        slug
-      }
-      frontmatter {
-        date(formatString: "MMMM DD, YYYY")
+export const pageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
         title
-        description
-        tags
+      }
+    }
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      nodes {
+        excerpt
+        fields {
+          slug
+        }
+        frontmatter {
+          date(formatString: "MMMM DD, YYYY")
+          title
+          description
+          tags
+        }
       }
     }
   }
-}`
+`
